@@ -1,5 +1,3 @@
-filetype off
-
 "Vundle Plugins"
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin('~/.config/nvim/bundle')
@@ -15,6 +13,7 @@ Plugin 'vim-scripts/AutoClose'
 Plugin 'morhetz/gruvbox'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-fugitive'
+Plugin 'vimwiki/vimwiki'
 
 call vundle#end()
 filetype plugin indent on 
@@ -54,3 +53,5 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set laststatus=2
 
+set nocompatible
+syntax on
