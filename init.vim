@@ -14,15 +14,25 @@ Plugin 'morhetz/gruvbox'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vimwiki/vimwiki'
+Plugin 'mattn/calendar-vim'
 
 call vundle#end()
 filetype plugin indent on 
+
+"Keyboard Remaps"
+nnoremap 0 $
+nnoremap 9 0
+xnoremap 0 $
+xnoremap 9 0
 
 "Default vim settings"
 set number
 set termguicolors
 let mapleader=","
 colorscheme gruvbox
+
+"Calendar Settings"
+nmap <leader>c :Calendar<CR>
 
 "NERDTree Settings"
 map <C-n> :NERDTreeToggle<CR>
@@ -55,3 +65,9 @@ set laststatus=2
 
 set nocompatible
 syntax on
+
+"Vim Wiki Settings"
+let g:vimwiki_autowriteall = 1
+let g:vimwiki_list = [{'path': '$HOME/Dropbox/wiki'}]
+let g:vimwiki_ext = '.md'
+let g:vimwiki_global_ext = 0
