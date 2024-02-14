@@ -13,7 +13,6 @@ Plugin 'vim-scripts/AutoClose'
 Plugin 'morhetz/gruvbox'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-fugitive'
-Plugin 'vimwiki/vimwiki'
 Plugin 'mattn/calendar-vim'
 
 call vundle#end()
@@ -65,9 +64,3 @@ set laststatus=2
 
 set nocompatible
 syntax on
-
-"Vim Wiki Settings"
-let g:vimwiki_autowriteall = 1
-let g:vimwiki_list = [{'path': '$HOME/Dropbox/wiki'}]
-let g:vimwiki_ext = '.md'
-let g:vimwiki_global_ext = 0
