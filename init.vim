@@ -13,7 +13,6 @@ Plugin 'vim-scripts/AutoClose'
 Plugin 'morhetz/gruvbox'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-fugitive'
-Plugin 'mattn/calendar-vim'
 
 call vundle#end()
 filetype plugin indent on 
